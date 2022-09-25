@@ -7,6 +7,7 @@ import static main.java.com.mymoney.enums.MyMoneyAsset.*;
 import java.util.Arrays;
 import java.util.List;
 import java.util.zip.DataFormatException;
+import static java.time.Month.*;
 
 public class MyMoneyFunctionImplTest {
     private MyMoneyDao myMoneyDao;
@@ -35,5 +36,17 @@ public class MyMoneyFunctionImplTest {
         } else if(sipAmounts.stream().mapToDouble(Double::doubleValue).sum() != myMoneyDao.initSip.getInvestment()) {
             System.out.println("Incorrect SIP function output");
         }
+    }
+
+    void testChange() {
+        
+    }
+
+    void testBalance() {
+        
+    }
+
+    void testRebalance() {
+        
     }
 }
